@@ -1,5 +1,5 @@
 ### Why Scrape arXiv?
-Researchers often need to review the latest scientific literature. While this process can be done manually by conducting various searches on search engines like Google Scholar, it is recommended to follow a systematic procedure (even if it is not a systematic review paper) to obtain the most relevant evidence. To automate this process, we provide two functions for scraping arXiv search results.
+Researchers often need to review the latest scientific literature. While this process can be done manually by conducting various searches on search engines like Google Scholar, it is recommended to follow a systematic procedure (even if it is not a Systematic Review paper) to obtain the most relevant evidence. To automate this process, we provide two functions for scraping arXiv search results.
 
 Hope this helps!
 
