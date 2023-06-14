@@ -3,27 +3,11 @@ Researchers often need to review the latest scientific literature. Although this
 
 Hope it helps!
 
+<br><br>
+
 ### Code description
 This code consists of two functions for scraping and downloading papers from arXiv. The functions are as follows:
 
 1. scrap_arxiv(url, output_filepath='output.xlsx'): This function takes a search strategy URL for arXiv and scrapes the search results. It retrieves the titles, authors, abstracts, and PDF links for each article and returns a pandas DataFrame with this information. The search results are also saved in an Excel file specified by output_filepath (default is 'output.xlsx'). The function is authored by Enrique Callejas Castro.
 
 2. download_papers(links_list, path='papers'): This function takes a list of PDF links and downloads the corresponding papers. The downloaded files are saved in a folder specified by path (default is 'papers'). The function utilizes the requests library to download the files and tqdm for displaying a progress bar. The function is authored by Enrique Callejas Castro.
-
-### Usage
-To use these functions, follow the steps below:
-
-1. Import the required libraries.
-
-2. Copy the code for the scrap_arxiv and download_papers functions into your project.
-
-3. Call the functions with the desired parameters. Example usage:
-/# Scrap arXiv search.
-url = 'https://arxiv.org/search/?query=your_search_query_here'
-output_filepath = 'output.xlsx'
-df = scrap_arxiv(url, output_filepath)
-
-/# Download papers.
-links_list = df['pdf_link'].tolist()
-path = 'papers'
-download_papers(links_list, path)
